@@ -4,6 +4,8 @@
 
 技术栈：Python + Streamlit + DeepSeek API（OpenAI 兼容接口）+ JSON 文件记忆。
 
+[![Deploy to Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=Fine-one%2Ftoxichelper&branch=main&mainModule=app.py)
+
 ## 功能
 
 - **聊天**：毒舌人设，句句戳中要害但有用；每次 2-3 句，有 emoji、有梗
@@ -14,7 +16,7 @@
 
 ## 在线 Demo 怎么玩（评审人看这里，零部署）
 
-1. 打开部署好的在线 Demo 链接（如 Hugging Face Space）。
+1. 打开部署好的在线 Demo 链接（形如 `https://你的应用名.streamlit.app`）。
 2. 在页面左侧「🔑 填 API Key」窗口里，粘贴一个 DeepSeek API Key（`sk-...`）。
 3. 直接聊天、点「✅ 今日打卡」、点「🕊️ 我鸽了」。
 
@@ -50,10 +52,16 @@ python -m venv .venv
 DEEPSEEK_API_KEY = "sk-你的key"
 ```
 
-### 方式 B：Streamlit Community Cloud
+### 方式 B：Streamlit Community Cloud（推荐在线部署，免费）
 
-1. 打开 https://share.streamlit.io → **New app** → 选择 GitHub 上的这个仓库和 `app.py`（如果你是 fork 后部署，就选你自己 fork 的仓库）。
-2. Advanced settings 里可加 Secret `DEEPSEEK_API_KEY`；不配也行，访客在左侧窗口自己填。
+点下面的按钮，用 GitHub 登录后按提示确认即可（仓库、分支、入口文件已自动填好）：
+
+[![Deploy to Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=Fine-one%2Ftoxichelper&branch=main&mainModule=app.py)
+
+或手动：打开 https://share.streamlit.io → **New app** → 选本仓库、分支 `main`、入口文件 `app.py` → Deploy。
+
+> 备注：Hugging Face Spaces 免费版现在不能托管 Streamlit（Docker 型 Space 需 PRO），所以在线 Demo 用 Streamlit Cloud。
+> Key 不用配 Secret，访客在左侧窗口自己填；想免填，可在 Advanced settings 加 Secret `DEEPSEEK_API_KEY`。
 
 ## 文件结构
 
@@ -85,4 +93,4 @@ DEEPSEEK_API_KEY = "sk-你的key"
 
 - 图文教程（小红书风格）：`小红书图文教程.md`
 - 创作说明：`创作说明.md`
-- 部署步骤：`部署到HuggingFace-Spaces.md`
+- 部署步骤：`部署到Streamlit-Cloud.md`
