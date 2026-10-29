@@ -16,7 +16,9 @@
 
 ## 在线 Demo 怎么玩（评审人看这里，零部署）
 
-1. 打开部署好的在线 Demo 链接（形如 `https://你的应用名.streamlit.app`）。
+**在线 Demo：https://fine-one-toxichelper-app-efajuh.streamlit.app/**
+
+1. 打开上面的在线 Demo 链接。
 2. 在页面左侧「🔑 填 API Key」窗口里，粘贴一个 DeepSeek API Key（`sk-...`）。
 3. 直接聊天、点「✅ 今日打卡」、点「🕊️ 我鸽了」。
 

@@ -2,6 +2,8 @@
 
 > 为什么不用 Hugging Face Spaces：目前 HF 免费账号创建 Gradio/Docker 型 Space（Streamlit 现在归 Docker 型）需要 PRO 订阅，Static Space 又跑不了 Python，所以改用 Streamlit 官方免费托管。
 
+**在线 Demo（已部署）**：https://fine-one-toxichelper-app-efajuh.streamlit.app/
+
 ## 一键部署
 
 点击 README 里的 Deploy to Streamlit 按钮，或在浏览器打开：
