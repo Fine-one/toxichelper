@@ -23,17 +23,7 @@
 
 ## 自己部署
 
-### 方式 A：Hugging Face Spaces（推荐，免费，5 分钟）
-
-详细步骤见 `部署到HuggingFace-Spaces.md`。简版：
-
-1. https://huggingface.co 登录 → **New Space** → SDK 选 **Streamlit** → 免费 CPU。
-2. 上传本仓库的 4 个文件：`app.py`、`pet.py`、`requirements.txt`、`README.md`。
-3. 打开 Space 链接即可。Key 两种给法（二选一）：
-   - **访客自己填**：什么都不用配，访客在左侧窗口粘 Key（适合交 Demo）。
-   - **免填**：Space 的 Settings → Variables and secrets → 新建 Secret，Name 填 `DEEPSEEK_API_KEY`，Value 填 Key。
-
-### 方式 B：本地运行
+### 方式 A：本地运行
 
 WSL / macOS / Linux：
 
@@ -60,7 +50,7 @@ python -m venv .venv
 DEEPSEEK_API_KEY = "sk-你的key"
 ```
 
-### 方式 C：Streamlit Community Cloud
+### 方式 B：Streamlit Community Cloud
 
 1. 打开 https://share.streamlit.io → **New app** → 选择 GitHub 上的这个仓库和 `app.py`（如果你是 fork 后部署，就选你自己 fork 的仓库）。
 2. Advanced settings 里可加 Secret `DEEPSEEK_API_KEY`；不配也行，访客在左侧窗口自己填。
