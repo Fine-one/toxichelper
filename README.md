@@ -62,9 +62,8 @@ DEEPSEEK_API_KEY = "sk-你的key"
 
 ### 方式 C：Streamlit Community Cloud
 
-1. 把本仓库推到 GitHub。
-2. 打开 https://share.streamlit.io → **New app** → 选仓库和 `app.py`。
-3. Advanced settings 里可加 Secret `DEEPSEEK_API_KEY`；不配也行，访客在左侧窗口自己填。
+1. 打开 https://share.streamlit.io → **New app** → 选择 GitHub 上的这个仓库和 `app.py`（如果你是 fork 后部署，就选你自己 fork 的仓库）。
+2. Advanced settings 里可加 Secret `DEEPSEEK_API_KEY`；不配也行，访客在左侧窗口自己填。
 
 ## 文件结构
 
